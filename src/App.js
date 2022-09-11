@@ -2,74 +2,35 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Fragment, useState } from "react";
 
-const data = [
-  { id: 1, name: "john" },
-  { id: 2, name: "peter" },
-  { id: 3, name: "susan" },
-  { id: 4, name: "anna" },
-];
-
-const initalValues = {
-  name: "peter",
-  age: 24,
-  message: "random message",
-};
 function App() {
-  const [people, setPeople] = useState(data);
-  const [person, setPerson] = useState(initalValues);
-  const handleClearAll = () => {
-    setPeople([]);
+  const initalValue = 0;
+
+  const [value, setValue] = useState(initalValue);
+
+  const handleInc = () => {
+    setValue(value + 1);
   };
-  const handleSingleRemove = (id) => {
-    console.log(id);
-    let newPeople = people.filter((person) => person.id !== id);
-    console.log(newPeople);
-    setPeople(newPeople);
+  const handleDec = () => {
+    console.log("i am dec");
+    setValue(value - 1);
   };
-
-
-const changeMessage = () =>{
-  setPerson({...person, message: 'hello World' });
-}
-
-
+  const handleReset = () => {
+    setValue(initalValue);
+  };
   return (
-    <div className="App">
-      <div>
-      {people.map((person) => {
-        const { id, name } = person;
-        return (
-          <div key={name} className={"item"}>
-            <h4>{name}</h4>
-            <button className="" onClick={() => handleSingleRemove(id)}>
-              Remove Item
-            </button>
-          </div>
-        );
-      })}
-      <button onClick={handleClearAll} className="btn">
-        Clear All
+    <section className="App">
+      <h2> Counter</h2>
+      <h3>{value}</h3>
+      <button className="btn" onClick={handleDec}>
+        decrease
       </button>
-      </div>
-      <div>
-        <h2>
-          object change
-        </h2>
-        <h3>
-          {person.name}
-        </h3>
-        <h3>
-          {person.age}
-        </h3>
-        <h3>
-          {person.message}
-        </h3>
-        <button className="btn" onClick={changeMessage} >
-          change message
-        </button>
-      </div>
-      
-    </div>
+      <button className="btn" onClick={handleReset}>
+        reset
+      </button>
+      <button className="btn" onClick={handleInc}>
+        increase
+      </button>
+    </section>
   );
 }
 
