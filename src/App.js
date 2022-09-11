@@ -28,13 +28,13 @@ setPeople(newPeople);
       {people.map((person) => {
         const { id, name } = person;
         return (
-          <Fragment key={name}>
+          <div key={name} className={'item'}>
             <h4>{name}</h4>
             <button className="" onClick={ () => handleSingleRemove(id)}>Remove Item</button>
-          </Fragment>
+          </div>
         );
       })}
-      <button className="" onClick={handleClearAll}>
+      <button onClick={handleClearAll} className="btn">
         Clear All
       </button>
     </div>
