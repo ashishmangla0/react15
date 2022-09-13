@@ -8,7 +8,10 @@ function App() {
   const [value, setValue] = useState(initalValue);
 
   const handleInc = () => {
-    setValue(value + 1);
+    // setValue(value + 1);
+    setValue((prevState) =>  { 
+      return prevState + 1
+    })
   };
   const handleDec = () => {
     console.log("i am dec");
@@ -17,8 +20,24 @@ function App() {
   const handleReset = () => {
     setValue(initalValue);
   };
+
+
+  const handleComplexInc = () =>{
+    setTimeout(() =>{
+
+      //setValue(value + 1)
+      setValue((prevState) =>  { 
+        return prevState + 1
+      })
+    
+    
+    },2000)
+  }
+
+
   return (
-    <section className="App">
+    <>
+    <section>
       <h2> Counter</h2>
       <h3>{value}</h3>
       <button className="btn" onClick={handleDec}>
@@ -31,6 +50,15 @@ function App() {
         increase
       </button>
     </section>
+    <section className="App">
+      <h2>Complex Counter Counter</h2>
+      <h3>{value}</h3>
+      <button className="btn" onClick={handleComplexInc}>
+        Increase
+      </button>
+    </section>
+    </>
+    
   );
 }
 
