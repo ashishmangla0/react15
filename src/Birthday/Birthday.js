@@ -1,6 +1,7 @@
 import { useState } from "react";
 import data from "./data";
 import List from "./List";
+ import '../birthday.css'
 
 console.log(data);
 

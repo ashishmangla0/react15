@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
-import "./App.css";
 import { Fragment, useState } from "react";
-import Birthday from "./Birthday";
+//import Birthday from "./Birthday";
+import Tours from "./Tours";
 
 function App() {
  return(
-  <Birthday/>
+  <Tours/>
  )
 }
 
