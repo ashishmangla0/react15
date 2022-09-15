@@ -31,4 +31,8 @@ setPeople([]);
   );
 };
 
+<<<<<<< HEAD
 export default Birthday;
+=======
+export default Birthday;
+>>>>>>> e61e06c8ad574d4d2af2deda9d0fbed906d0b492

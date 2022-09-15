@@ -1,12 +1,7 @@
 import logo from "./logo.svg";
-import "./App.css";
 import { Fragment, useState } from "react";
-import Birthday from "./Birthday";
-// import Project from "./Project";
-
-
-
-
+// import Birthday from "./Birthday";
+import Tours from "./Tours";
 function App() {
   
 
@@ -14,12 +9,8 @@ function App() {
   return (
     <div className="App">
       {/* <Project/> */}
-      <Birthday/>
-    
-    
-      
+      {/* <Birthday/> */}
+      <Tours/>
     </div>
   );
-}
-
 export default App;
