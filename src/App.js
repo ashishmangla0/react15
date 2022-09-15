@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { Fragment, useState } from "react";
-import Project from "./Project";
+import Birthday from "./Birthday";
+// import Project from "./Project";
 
 
 
@@ -12,7 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <Project/>
+      {/* <Project/> */}
+      <Birthday/>
     
     
       
