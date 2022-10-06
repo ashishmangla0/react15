@@ -16,8 +16,8 @@ function App() {
       {/* <Birthday/> */}
       {/* <Tours/> */}
       {/* <Reviews/> */}
-      {/* <Accordion/> */}
-      <CardShimer/>
+      <Accordion/>
+      {/* <CardShimer/> */}
     </div>
   );
 }
