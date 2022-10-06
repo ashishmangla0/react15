@@ -5,7 +5,7 @@ import CardShimer from "./CardShimer";
 // import Tours from "./Tours";
 // import Reviews from "./Reviews";
 // import Images from "./Images";
-// import Accordion from "./Accordion";
+import Accordion from "./Accordion";
 
 
 
