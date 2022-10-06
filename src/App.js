@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import { Fragment, useEffect, useState } from "react";
-import CardShimer from "./CardShimer";
+// import CardShimer from "./CardShimer";
 // import Birthday from "./Birthday";
 // import Tours from "./Tours";
 // import Reviews from "./Reviews";
