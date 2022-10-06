@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import people from "./data";
 const Review = () => {
+
   const [index, setIndex] = useState(0);
   const { id, name, image, job, text } = people[index];
   const handleNumberCheck = (number) => {

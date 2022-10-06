@@ -1,7 +1,5 @@
 import "./reviews.css";
-
 import Review from "./Review";
-
 const Reviews = () => {
   return (
     <main>
