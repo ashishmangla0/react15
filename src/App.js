@@ -5,7 +5,10 @@ import { Fragment, useEffect, useState } from "react";
 // import Tours from "./Tours";
 // import Reviews from "./Reviews";
 // import Images from "./Images";
-import Accordion from "./Accordion";
+// import Accordion from "./Accordion";
+// import UseEffectCleanup from './UseEffectCleanup';
+
+import UseEffectArgs from "./UseEffectArgs";
 
 
 
@@ -16,8 +19,10 @@ function App() {
       {/* <Birthday/> */}
       {/* <Tours/> */}
       {/* <Reviews/> */}
-      <Accordion/>
+      {/* <Accordion/> */}
       {/* <CardShimer/> */}
+      {/* <UseEffectCleanup/> */}
+      <UseEffectArgs/>
     </div>
   );
 }
